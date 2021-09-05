@@ -13,3 +13,4 @@ public/service-worker.js
 private-key.json
 .now
 *.log
+.vercel

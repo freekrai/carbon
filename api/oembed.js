@@ -6,7 +6,7 @@ const { send } = require('micro')
 
 const toIFrame = (url, width, height) =>
   `<iframe
-  src="https://carbon.now.sh/embed${url}"
+  src="https://codeshot-omega.vercel.app/embed${url}"
   width="${width}px"
   height="${height}px"
   style="width:${width}px; height:${height}px; border:0; overflow:auto;"
@@ -46,7 +46,7 @@ module.exports = (req, res) => {
         }`,
         width,
         height
-      )
+      ),
     }
 
     return send(res, 200, obj)
